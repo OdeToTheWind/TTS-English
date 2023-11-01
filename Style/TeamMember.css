@@ -1,0 +1,122 @@
+
+
+
+
+h4{
+    color: rgb(5, 134, 154);
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    padding-bottom: 0;
+    margin: 25px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.team-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Images Boxes */
+.img1, .img2, .img3, .img4, .img5{
+    padding: 20px;
+    margin: 10px;
+    background-color: aquamarine;
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover{
+    padding: 10px;
+    background-color: bisque;
+    cursor: pointer;
+}
+p{
+    color: 00000;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    padding-top: 0;
+    margin: 25px;
+}
+
+#dis-img1, #dis-img2, #dis-img3, #dis-img4, #dis-img5{
+    display: none;
+}
+
+/* The Image */
+div.img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Description of Image */
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+   
+    width: 24.99999%;
+}.team-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    overflow: hidden;
+   /* max-width: 800px;  Set the maximum width of the team container */
+    margin: 0 auto; /* Horizontally center within the page */
+}
+
+.team-members {
+    display: flex;
+}
+
+.team-member {
+    margin: 20px; /* Adjust this value for spacing between team members */
+    text-align: center;
+}
+
+.member-image { /* take this */
+    width: 150px; /* Set the width of the team member images */
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.member-image:hover { /* take this */
+    transform: scale(1.1); /* Adjust the scale factor for the hover effect */
+}
+
+.popup { /* take this */
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content { /* take this */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.close { /* take this */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <link rel="stylesheet" href="/Style/TeamMember.css">
+    <link rel="stylesheet" href="/Style/Navbar.css">
+</head>
+<body>
+    <div class="Navbar">
+        
+        <a href="/">Home</a>        
+        <a href="/Components/About.html">About</a>
+        <a href="/Components/Gallery.html">Gallery</a>
+        <a href="/Components/Datasets.html">Datasets</a>
+        <a href="/Components/TeamMember.html">Team Members</a>
+        <a href="/Components/ContactUs.html">Contact Us</a>
+    </div>
+    <div>
+        
+    <h4>TEAM MEMBERS</h4>
+
+    <div class="team-container">
+        <div class="team-members">
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 1" class="member-image" id="member1">
+                <h3>Hello World!</h3>
+            </div>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 2" class="member-image" id="member2">
+                <h3>Hello World!</h3>
+            </div>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 3" class="member-image" id="member3">
+                <h3>Hello World!</h3>
+            </div>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 4" class="member-image" id="member4">
+                <h3>Hello World!</h3>
+            </div>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 5" class="member-image" id="member5">
+                <h3>Hello World!</h3>
+            </div>
+            <!-- Add more team members here -->
+        </div>
+    </div>
+
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <span class="close" id="close1">&times;</span>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 1" class="member-image" id="member1">
+            </div>
+            <h2>Name of Member 1: Hello World!</h2>
+            <p><a href="#">Profile Link</a></p>
+            <p>Brief description about Team Member 1.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <span class="close" id="close2">&times;</span>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 2" class="member-image" id="member2">
+            </div>
+            <h2>Name of Member 2: Hello World!</h2>
+            <p><a href="#">Profile Link</a></p>
+            <p>Brief description about Team Member 2.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup3">
+        <div class="popup-content">
+            <span class="close" id="close3">&times;</span>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 3" class="member-image" id="member3">
+            </div>
+            <h2>Name of Member 3: Hello World!</h2>
+            <p><a href="#">Profile Link</a></p>
+            <p>Brief description about Team Member 1.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup4">
+        <div class="popup-content">
+            <span class="close" id="close4">&times;</span>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 4" class="member-image" id="member4">
+            </div>
+            <h2>Name of Member 4: Hello World!</h2>
+            <p><a href="#">Profile Link</a></p>
+            <p>Brief description about Team Member 2.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup5">
+        <div class="popup-content">
+            <span class="close" id="close5">&times;</span>
+            <div class="team-member">
+                <img src="../assests/images/images.png" alt="Team Member 5" class="member-image" id="member5">
+            </div>
+            <h2>Name of Member 5: Hello World!</h2>
+            <p><a href="#">Profile Link</a></p>
+            <p>Brief description about Team Member 2.</p>
+        </div>
+    </div>
+
+</div>
+
+    <div class="footer">
+        <div><img src="../assests/IISc_Master_Seal_Black_Transparent.png" alt="IISc, Bengaluru"  width="150px"></div>
+        <div><h3>&copy 2023 Spirelab</h3></div>
+        <div><a href="/">Terms and Conditions</a></div>
+        <div><img src="../assests/Spire.jpg" alt="Spire logo"  width="80px"></div>
+    </div> 
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const memberImages = document.querySelectorAll('.member-image');
+
+            memberImages.forEach((image, index) => {
+                image.addEventListener('click', () => {
+                    const popup = document.getElementById(`popup${index + 1}`);
+                    const closeBtn = document.getElementById(`close${index + 1}`);
+
+                    popup.style.display = 'block';
+
+                    closeBtn.addEventListener('click', () => {
+                        popup.style.display = 'none';
+                    });
+                });
+            });
+        });
+
+
+    </script>
+</html>
