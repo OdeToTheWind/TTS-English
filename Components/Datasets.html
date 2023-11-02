@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amulya Data</title>
-    <link rel="stylesheet" href="/Style/Datasets.css">
-    <link rel="stylesheet" href="/Style/Navbar.css">
+    <link rel="stylesheet" href="../Style/Datasets.css">
+    <link rel="stylesheet" href="../Style/Navbar.css">
 </head>
 <body>
     
-        <div class="Navbar">
+  <div class="Navbar">
         
-            <a href="/">Home</a>        
-            <a href="/Components/About.html">About</a>
-            <a href="/Components/Gallery.html">Gallery</a>
-            <a href="/Components/Datasets.html">Datasets</a>
-            <a href="/Components/TeamMember.html">Team Members</a>
-            <a href="/Components/ContactUs.html">Contact Us</a>  
-                
-    </div>
+    <a href="../index.html">Home</a>        
+    <a href="../Components/About.html">About</a>
+    <a href="../Components/Gallery.html">Gallery</a>
+    <a href="../Components/Datasets.html">Datasets</a>
+    <a href="../Components/TeamMember.html">Team Members</a>
+    <a href="../Components/ContactUs.html">Contact Us</a>
+</div>
+
 <div class="datatab">
     <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'AUDIOM')">AUDIO MALE DATA</button>
+    <button class="tablinks" onclick="openCity(event, 'AUDIOM')" id="defaultOpen">AUDIO MALE DATA</button>
     <button class="tablinks" onclick="openCity(event, 'AUDIOF')">AUDIO FEMALE DATA</button>
     <button class="tablinks" onclick="openCity(event, 'TEXTM')">TEXT MALE DATA</button>
     <button class="tablinks" onclick="openCity(event, 'TEXTF')">TEXT FEMALE DATA</button>
@@ -159,6 +159,9 @@
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
 </script>
 
 </body>
